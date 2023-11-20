@@ -5,6 +5,7 @@ To Do:
     General:
     - Deploy to Azure/GCP
     - Standardize quotes
+    - HTML/CSS formatting
 
     Password Generator:
     - Length option
