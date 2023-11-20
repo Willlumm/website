@@ -10,3 +10,6 @@ To Do:
     - Length option
     - Exlcude characters option
     - Refresh button
+
+Resources:
+- https://www.geeksforgeeks.org/flask-tutorial/
