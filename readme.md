@@ -1,15 +1,21 @@
-Willlumm's personal website.
+# WL Sector: Willlumm's Personal Website
 
-To Do:
+## To Do
     
-    General:
-    - HTML/CSS formatting
+- General
+  - HTML/CSS formatting
 
-    Password Generator:
-    - Length option
-    - Exlcude characters option
-    - Refresh button
-    - Copy button
+- Password Generator
+  - Length option
+  - Exlcude characters option
+  - Refresh button
+  - Copy button
 
-Resources:
+## Project Ideas:
+- Catan game
+- Chess game
+- Book club voting system
+- BoxCar2D
+
+# Resources
 - https://www.geeksforgeeks.org/flask-tutorial/
