@@ -3,7 +3,6 @@ Willlumm's personal website.
 To Do:
     
     General:
-    - Deploy to Azure/GCP
     - HTML/CSS formatting
 
     Password Generator:
