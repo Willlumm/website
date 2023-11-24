@@ -9,8 +9,6 @@ def main():
 
 @app.route("/password", methods=["GET", "POST"])
 def password():
-    length = 64
-    if request.method == "POST":
-        length = int(request.form["length"])
+    length = int(request.form["length"]) if request.method == "POST" else 64
     password = generate_password(length)
     return render_template("password.html", password=password, length=length)
