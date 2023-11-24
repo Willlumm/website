@@ -16,6 +16,9 @@
 - Chess game
 - Book club voting system
 - BoxCar2D
+- Color hex converter
+- Old projects
+- Physics simulation
 
 # Resources
 - https://www.geeksforgeeks.org/flask-tutorial/
