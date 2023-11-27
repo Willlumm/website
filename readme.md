@@ -10,6 +10,9 @@
   - Refresh button
   - Copy button
 
+# Bugs
+- Password generator options not working on feature branch
+
 ## Project Ideas:
 - Catan game
 - Chess game

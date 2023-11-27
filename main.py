@@ -9,7 +9,7 @@ def main():
 
 @app.route("/password", methods=["GET", "POST"])
 def password():
-    chars = "".join([chr(i) for i in range (33, 126)])
+    chars = "".join([chr(i) for i in range(33, 126)])
     length = 64
     if request.method == "POST":
         chars = request.form["chars"]
