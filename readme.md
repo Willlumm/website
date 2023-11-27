@@ -4,6 +4,7 @@
     
 - General
   - HTML/CSS formatting
+  - Matoran font toggle
 
 - Password Generator
   - Length option
