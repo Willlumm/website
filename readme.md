@@ -6,9 +6,12 @@
   - Matoran font toggle
 
 - Password Generator
-  - Exlcude characters option
-  - Refresh button
   - Copy button
+  - Add limits
+    - Min number of characters
+    - Min length
+    - Max length
+  - More readable characters order
 
 # Bugs
 - Password generator options not working on feature branch
