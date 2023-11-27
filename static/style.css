@@ -2,27 +2,26 @@ body {
     background-color:   #111111;
     color:              #EEEEEE;
     padding:            64px;
-    text-align:         center;
 }
 
 h1 {
-    font-family:        Consolas;
+    font-family:        monospace;
     font-size:          64px;
     text-align:         center;
 }
 
 h2 {
-    font-family:        Consolas;
+    font-family:        monospace;
     font-size:          32px;
     text-align:         center;
 }
 
 p {
-    font-family:        Helvetica;
+    font-family:        Helvetica, Arial, sans-serif;
     font-size:          16px;
 }
 
-label {
-    font-family:        Helvetica;
-    font-size:          16px;
+p[class="subtitle"] {
+    font-style:         italic;
+    text-align:         center;
 }

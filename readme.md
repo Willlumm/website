@@ -3,11 +3,9 @@
 ## To Do
     
 - General
-  - HTML/CSS formatting
   - Matoran font toggle
 
 - Password Generator
-  - Length option
   - Exlcude characters option
   - Refresh button
   - Copy button
