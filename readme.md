@@ -24,6 +24,9 @@
 - Color hex converter
 - Old projects
 - Physics simulation
+- CV
+- About section
+- Links
 
 # Resources
 - https://www.geeksforgeeks.org/flask-tutorial/
