@@ -4,6 +4,7 @@
     
 - General
   - HTML/CSS formatting
+  - Add quote of the day
 
 - Password Generator
   - Length option
