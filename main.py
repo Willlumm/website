@@ -1,5 +1,6 @@
+# flask --app main run -p 8000  
+
 from flask import Flask, render_template, request
-from password_generator import generate_password
 
 app = Flask(__name__)
 
@@ -14,5 +15,4 @@ def password():
     if request.method == "POST":
         chars = request.form["chars"]
         length = int(request.form["length"])
-    password = generate_password(chars, length)
     return render_template("password.html", password=password, chars=chars, length=length)
