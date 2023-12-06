@@ -12,6 +12,13 @@
   - Refresh button
   - Copy button
 
+- Voting System
+  - Plan
+    - Overview
+      - Form to enter 3 books
+      - Once all users submitted, generate bracket
+      - Each user votes at each match in bracket, show reslts once all users voted
+
 ## Project Ideas:
 - Catan game
 - Chess game
@@ -23,3 +30,6 @@
 
 # Resources
 - https://www.geeksforgeeks.org/flask-tutorial/
+- https://medium.com/@jgleeee/sharing-data-across-workers-in-a-gunicorn-flask-application-2ad698591875
+- https://stackoverflow.com/questions/53168297/how-to-handle-multi-users-requests-separately-in-flask
+

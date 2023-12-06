@@ -14,3 +14,12 @@ def password():
         length = int(request.form["length"])
     password = generate_password(length)
     return render_template("password.html", password=password, length=length)
+
+@app.route("/voting")
+def voting():
+    global a
+    a += 1
+    return f"Tally: {a}"
+
+if __name__ == "main":
+    a = 0
