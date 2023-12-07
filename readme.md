@@ -6,13 +6,13 @@
   - Matoran font toggle
 
 - Password Generator
-  - Add limits
-    - Min number of characters
-    - Min length
-    - Max length
+  - Copy tooltip
+  - Refresh on enter
+  - Centering
+  - Dedupe chars
 
 # Bugs
-- Password generator options not working on feature branch
+- Chars not changing on user input
 
 ## Project Ideas:
 - Catan game
