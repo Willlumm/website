@@ -6,9 +6,6 @@
   - Matoran font toggle
 
 - Password Generator
-  - Copy tooltip
-  - Refresh on enter
-  - Centering
   - Dedupe chars
 
 # Bugs
