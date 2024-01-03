@@ -3,13 +3,14 @@
 ## To Do
     
 - General
-  - HTML/CSS formatting
+  - Matoran font toggle
+  - Quote of the day
 
 - Password Generator
-  - Length option
-  - Exlcude characters option
-  - Refresh button
-  - Copy button
+  - Dedupe chars
+
+# Bugs
+- Chars not changing on user input
 
 ## Project Ideas:
 - Catan game
@@ -19,6 +20,9 @@
 - Color hex converter
 - Old projects
 - Physics simulation
+- CV
+- About section
+- Links
 
 # Resources
 - https://www.geeksforgeeks.org/flask-tutorial/
