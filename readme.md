@@ -4,6 +4,7 @@
     
 - General
   - Matoran font toggle
+  - Quote of the day
 
 - Password Generator
   - Dedupe chars
