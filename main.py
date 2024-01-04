@@ -12,11 +12,6 @@ def main():
 def password():
     return render_template("password.html")
 
-@app.route("/voting")
+@app.route("/tourney")
 def voting():
-    global a
-    a += 1
-    return f"Tally: {a}"
-
-if __name__ == "main":
-    a = 0
+    return
