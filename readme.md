@@ -3,14 +3,13 @@
 ## To Do
     
 - General
-  - HTML/CSS formatting
-  - Add quote of the day
+  - Matoran font toggle
+  - Quote of the day
 
 - Password Generator
-  - Length option
-  - Exlcude characters option
-  - Refresh button
-  - Copy button
+  - Dedupe chars
+
+## Bugs
 
 - Voting System
   - Plan
@@ -31,8 +30,11 @@
 - Color hex converter
 - Old projects
 - Physics simulation
+- CV
+- About section
+- Links
 
-# Resources
+## Resources
 - https://www.geeksforgeeks.org/flask-tutorial/
 - https://medium.com/@jgleeee/sharing-data-across-workers-in-a-gunicorn-flask-application-2ad698591875
 - https://stackoverflow.com/questions/53168297/how-to-handle-multi-users-requests-separately-in-flask

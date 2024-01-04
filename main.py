@@ -1,5 +1,6 @@
+# flask --app main run -p 8000  
+
 from flask import Flask, render_template, request
-from password_generator import generate_password
 
 app = Flask(__name__)
 
@@ -9,11 +10,7 @@ def main():
 
 @app.route("/password", methods=["GET", "POST"])
 def password():
-    length = 64
-    if request.method == "POST":
-        length = int(request.form["length"])
-    password = generate_password(length)
-    return render_template("password.html", password=password, length=length)
+    return render_template("password.html")
 
 @app.route("/voting")
 def voting():
