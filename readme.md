@@ -9,8 +9,7 @@
 - Password Generator
   - Dedupe chars
 
-# Bugs
-- Chars not changing on user input
+## Bugs
 
 ## Project Ideas:
 - Catan game
@@ -24,5 +23,5 @@
 - About section
 - Links
 
-# Resources
+## Resources
 - https://www.geeksforgeeks.org/flask-tutorial/
