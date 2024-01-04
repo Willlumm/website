@@ -9,18 +9,25 @@
 - Password Generator
   - Dedupe chars
 
-## Bugs
-
 - Voting System
-  - Plan
-    - Overview
-      - Form to enter 3 books
-      - Once all users submitted, generate bracket
-      - Each user votes at each match in bracket, show reslts once all users voted
-      - How will client know to update? SSE? AJAX?
-      - Globals safe to use?
-      - Database for bracket?
+  - Overview
+    - Form to enter 3 books
+    - Once all users submitted, generate bracket
+    - Each user votes at each match in bracket, show reslts once all users voted
+    - How will client know to update? SSE? AJAX?
+    - Globals safe to use?
+    - Database for bracket?
+  - Technical challenges
+    - Simultaneous user sessions
+    - Asynchronous requests
+    - Data storage
+  - Roadmap
+    - Single user bracket voting
+    - Store round results
+    - Add async
+    - Add multiple users
 
+## Bugs
 
 ## Project Ideas:
 - Catan game
