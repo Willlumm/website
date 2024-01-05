@@ -8,21 +8,19 @@
 # 4: 3
 # 8: 7
 
-def arrange_by_seed(items):
-    weights = [[i] for i in range(len(items))]
-    pattern_len = len(items) // 2
-    while pattern_len > 1:
-        pattern = [i for i in range(pattern_len)]
-        pattern += pattern[::-1]
-        pattern *= len(items) // len(pattern)
-        for w, p in zip(weights, pattern):
-            w.append(p)
-        pattern_len //= 2
-    return [i for i, _ in sorted(zip(items, weights), key = lambda x: tuple(reversed(x[1])))]
+import math as m
 
-items = [i for i in range(1, 17)]
-print(items)
-print(arrange_by_seed(items))
+def arrange_seed(n):
+    seeds = [1, 2]
+    for i in range(2, int(m.log(n, 2)) + 1):
+        new_seeds = []
+        for s in seeds:
+            new_seeds += [s, 2**i - s + 1]
+        seeds = new_seeds
+    return seeds
+
+items = [i for i in range(1, 2**8+1)]
+print(arrange_seed(len(items)))
 
 """
 def generate_bracket(items):
