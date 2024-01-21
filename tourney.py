@@ -20,24 +20,27 @@ def arrange_seed(n):
     return seeds
 
 def generate_bracket(items):
-    # match, round, a_name, b_name, a_score, b_score, destination
     bracket = []
-    i = len(items)
-    r = 0
-    while i > 1:
-        round = []
-        for j in range(i//2):
-            a, b = None, None
-            dest = len(bracket) + i//2 + (j//2)
-            if r == 0:
-                a, b = items[2*j : 2*j+2]
-            elif i == 2:
-                dest = None
-            round.append([r, a, b, None, None, dest])
-            print(round[-1])
-        i //= 2
-        r += 1
-        bracket.extend(round)
+    for round in range(1, int(m.log(len(items), 2)) + 1):
+        bracket_len = len(bracket)
+        round_len = len(items) // 2**round
+        for i in range(round_len):
+            left, right = None, None
+            next_match = bracket_len + round_len + i//2
+            if round == 1:
+                left, right = items[2*i : 2*i+2]
+            elif round_len == 1:
+                next_match = None
+            bracket.append({
+                "match": bracket_len + i,
+                "round": round,
+                "left": left,
+                "right": right,
+                "left_score": None,
+                "right_score": None,
+                "next_match": next_match
+            })
+            print(bracket[-1])
         print()
     return bracket
 
