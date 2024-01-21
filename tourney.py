@@ -8,11 +8,12 @@
 # 4: 3
 # 8: 7
 
-import math as m
+import json
+import math
 
 def arrange_seed(n):
     seeds = [1, 2]
-    for i in range(2, int(m.log(n, 2)) + 1):
+    for i in range(2, int(math.log(n, 2)) + 1):
         new_seeds = []
         for s in seeds:
             new_seeds += [s, 2**i - s + 1]
@@ -21,7 +22,7 @@ def arrange_seed(n):
 
 def generate_bracket(items):
     bracket = []
-    for round in range(1, int(m.log(len(items), 2)) + 1):
+    for round in range(1, int(math.log(len(items), 2)) + 1):
         bracket_len = len(bracket)
         round_len = len(items) // 2**round
         for i in range(round_len):
@@ -44,8 +45,13 @@ def generate_bracket(items):
         print()
     return bracket
 
-items = [i for i in range(1, 2**6+1)]
-generate_bracket(items)
+def save_bracket(bracket):
+    with open("bracket.json", "w") as file:
+        json.dump(bracket, file)
+
+items = [i for i in range(1, 2**3+1)]
+bracket = generate_bracket(items)
+save_bracket(bracket)
 
 def get_votes(match):
     print(f"{match[0]} vs {match[1]}")
