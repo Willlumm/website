@@ -14,4 +14,4 @@ def password():
 
 @app.route("/tourney")
 def voting():
-    return
+    return render_template("tourney.html")
