@@ -40,6 +40,7 @@
 - CV
 - About section
 - Links
+- Civ 6 randomizer
 
 ## Resources
 - https://www.geeksforgeeks.org/flask-tutorial/
@@ -49,3 +50,15 @@
 - https://flask.palletsprojects.com/en/2.0.x/patterns/jquery/
 - https://ayumitanaka13.medium.com/how-to-use-ajax-with-python-flask-729c0a8e5346
 
+
+
+
+
+Item A: 5 -
+           |- Item B: 2 -                             - Item E: 0
+Item B: 7 -              |              - Item F: 3 -| 
+                         |- Item B: 4  |              - Item F: 3
+Item C: 0 -              |  Item  :   -|
+           |- Item D: 2 -              |              - Item G: 5
+Item D: 2 -                             - Item G: 9 -| 
+                                                      - Item H: 4
