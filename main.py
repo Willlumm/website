@@ -8,6 +8,10 @@ app = Flask(__name__)
 def main():
     return render_template("main.html")
 
+@app.route("/civ", methods=["GET", "POST"])
+def civ():
+    return render_template("civ.html")
+
 @app.route("/password", methods=["GET", "POST"])
 def password():
     return render_template("password.html")

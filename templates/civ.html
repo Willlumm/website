@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Civ 6 Randomizer</title>
+        <link rel="stylesheet" href="static/css/style.css">
+    </head>
+    <body>
+        <p id="test">Nothing :(</p>
+    </body>
+    <script>
+
+        // https://civilization.fandom.com/wiki/Starting_a_new_game_(Civ6)
+
+        // Basic
+
+        // Ruleset
+        // Civ
+        fetch("./static/json/civ_leaders.json")
+            .then((res) => {
+                if (!res.ok) {
+                    throw new Error(`HTTP error! Status: ${res.status}`);
+                }
+                return res.json();
+            })
+            .then((data) => console.log(data))
+            .catch((error) => console.error("Unable to fetch data:", error));
+        document.getElementById("test").innerHTML = civLeaders.then(res).json();
+        
+        // Leader
+        // Difficulty
+        // Game speed
+        // Map type
+        // Map size
+        // Game modes
+        // Disaster intensity
+        
+        // Advanced
+
+        // Start era
+        // Number of city-states
+        // Resource abundance
+        // World age
+        // Start position
+        // Temperature
+        // Rainfall
+        // Sea level
+        // Victory conditions
+        
+    </script>
+</html>
