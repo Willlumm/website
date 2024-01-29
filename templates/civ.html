@@ -5,7 +5,13 @@
         <link rel="stylesheet" href="static/css/style.css">
     </head>
     <body>
-        <p id="test">Nothing :(</p>
+        <p>
+
+            <!-- TO DO: Images-->
+            {{ settings.civ }}
+            <br>
+            {{ settings.leader }}
+        </p>
     </body>
     <script>
 
@@ -15,17 +21,6 @@
 
         // Ruleset
         // Civ
-        fetch("./static/json/civ_leaders.json")
-            .then((res) => {
-                if (!res.ok) {
-                    throw new Error(`HTTP error! Status: ${res.status}`);
-                }
-                return res.json();
-            })
-            .then((data) => console.log(data))
-            .catch((error) => console.error("Unable to fetch data:", error));
-        document.getElementById("test").innerHTML = civLeaders.then(res).json();
-        
         // Leader
         // Difficulty
         // Game speed
