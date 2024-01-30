@@ -1,0 +1,471 @@
+{
+    "leaders": [
+        {
+            "leader": "Teddy Roosevelt (Bull Moose)",
+            "civ": "American"
+        },
+        {
+            "leader": "Teddy Roosevelt (Rough Rider)",
+            "civ": "American"
+        },
+        {
+            "leader": "Abraham Lincoln",
+            "civ": "American"
+        },
+        {
+            "leader": "Saladin (Sultan)",
+            "civ": "Arabian"
+        },
+        {
+            "leader": "Saladin",
+            "civ": "Arabian"
+        },
+        {
+            "leader": "Kupe",
+            "civ": "M\u0101ori"
+        },
+        {
+            "leader": "Montezuma",
+            "civ": "Aztec"
+        },
+        {
+            "leader": "Hammurabi",
+            "civ": "Babylonian"
+        },
+        {
+            "leader": "Pedro II",
+            "civ": "Brazilian"
+        },
+        {
+            "leader": "Basil II",
+            "civ": "Byzantine"
+        },
+        {
+            "leader": "Theodora",
+            "civ": "Byzantine"
+        },
+        {
+            "leader": "Wilfrid Laurier",
+            "civ": "Canadian"
+        },
+        {
+            "leader": "Qin Shi Huang",
+            "civ": "Chinese"
+        },
+        {
+            "leader": "Kublai Khan",
+            "civ": "Chinese"
+        },
+        {
+            "leader": "Qin Shi Huang (Unifier)",
+            "civ": "Chinese"
+        },
+        {
+            "leader": "Yongle",
+            "civ": "Chinese"
+        },
+        {
+            "leader": "Wu Zetian",
+            "civ": "Chinese"
+        },
+        {
+            "leader": "Poundmaker",
+            "civ": "Cree"
+        },
+        {
+            "leader": "Wilhelmina",
+            "civ": "Dutch"
+        },
+        {
+            "leader": "Cleopatra (Ptolemaic)",
+            "civ": "Egyptian"
+        },
+        {
+            "leader": "Cleopatra",
+            "civ": "Egyptian"
+        },
+        {
+            "leader": "Ramses",
+            "civ": "Egyptian"
+        },
+        {
+            "leader": "Jo\u00e3o III",
+            "civ": "Portugese"
+        },
+        {
+            "leader": "John Curtin",
+            "civ": "Australian"
+        },
+        {
+            "leader": "Gitarja",
+            "civ": "Indonesian"
+        },
+        {
+            "leader": "Dido",
+            "civ": "Phoenician"
+        },
+        {
+            "leader": "Menelik II",
+            "civ": "Ethiopian"
+        },
+        {
+            "leader": "Catherine de Medici (Magnificence)",
+            "civ": "French"
+        },
+        {
+            "leader": "Catherine de Medici (Black Queen)",
+            "civ": "French"
+        },
+        {
+            "leader": "Eleanor of Aquitaine",
+            "civ": "French"
+        },
+        {
+            "leader": "Ambiorix",
+            "civ": "Gallic"
+        },
+        {
+            "leader": "Tamar",
+            "civ": "Georgian"
+        },
+        {
+            "leader": "Ludwig II",
+            "civ": "German"
+        },
+        {
+            "leader": "Frederick Barbarossa",
+            "civ": "German"
+        },
+        {
+            "leader": "Sim\u00f3n Bol\u00edvar",
+            "civ": "Gran Colombian"
+        },
+        {
+            "leader": "Pericles",
+            "civ": "Greek"
+        },
+        {
+            "leader": "Gorgo",
+            "civ": "Greek"
+        },
+        {
+            "leader": "Matthias Corvinus",
+            "civ": "Hungarian"
+        },
+        {
+            "leader": "Pachacuti",
+            "civ": "Incan"
+        },
+        {
+            "leader": "Chandragupta",
+            "civ": "Indian"
+        },
+        {
+            "leader": "Gandhi",
+            "civ": "Indian"
+        },
+        {
+            "leader": "Victoria",
+            "civ": "English"
+        },
+        {
+            "leader": "Hojo Tokimune",
+            "civ": "Japanese"
+        },
+        {
+            "leader": "Eleanor of Aquitaine",
+            "civ": "English"
+        },
+        {
+            "leader": "Jayavarman VII",
+            "civ": "Khmer"
+        },
+        {
+            "leader": "Mvemba a Nzinga",
+            "civ": "Kongolese"
+        },
+        {
+            "leader": "Mbande Nzinga",
+            "civ": "Kongolese"
+        },
+        {
+            "leader": "Sejong",
+            "civ": "Korean"
+        },
+        {
+            "leader": "Seondeok",
+            "civ": "Korean"
+        },
+        {
+            "leader": "Alexander",
+            "civ": "Macedonian"
+        },
+        {
+            "leader": "Sundiata Keita",
+            "civ": "Malian"
+        },
+        {
+            "leader": "Mansa Musa",
+            "civ": "Malian"
+        },
+        {
+            "leader": "Victoria (Age of Steam)",
+            "civ": "English"
+        },
+        {
+            "leader": "Lautaro",
+            "civ": "Mapuche"
+        },
+        {
+            "leader": "Lady Six Sky",
+            "civ": "Mayan"
+        },
+        {
+            "leader": "Genghis Khan",
+            "civ": "Mongolian"
+        },
+        {
+            "leader": "Kublai Khan",
+            "civ": "Mongolian"
+        },
+        {
+            "leader": "Elizabeth I",
+            "civ": "English"
+        },
+        {
+            "leader": "Tokugawa",
+            "civ": "Japanese"
+        },
+        {
+            "leader": "Amanitore",
+            "civ": "Nubian"
+        },
+        {
+            "leader": "Suleiman",
+            "civ": "Ottoman"
+        },
+        {
+            "leader": "Suleiman (Magnificent)",
+            "civ": "Ottoman"
+        },
+        {
+            "leader": "Cyrus",
+            "civ": "Persian"
+        },
+        {
+            "leader": "Nader Shah",
+            "civ": "Persian"
+        },
+        {
+            "leader": "Harald Hardrada",
+            "civ": "Norwegian"
+        },
+        {
+            "leader": "Jadwiga",
+            "civ": "Polish"
+        },
+        {
+            "leader": "Harald Hardrada (Varangian)",
+            "civ": "Norwegian"
+        },
+        {
+            "leader": "Julius Caesar",
+            "civ": "Roman"
+        },
+        {
+            "leader": "Trajan",
+            "civ": "Roman"
+        },
+        {
+            "leader": "Peter",
+            "civ": "Russian"
+        },
+        {
+            "leader": "Robert the Bruce",
+            "civ": "Scottish"
+        },
+        {
+            "leader": "Tomyris",
+            "civ": "Scythian"
+        },
+        {
+            "leader": "Philip II",
+            "civ": "Spanish"
+        },
+        {
+            "leader": "Gilgamesh",
+            "civ": "Sumerian"
+        },
+        {
+            "leader": "Kristina",
+            "civ": "Swedish"
+        },
+        {
+            "leader": "B\u00e0 Tri\u1ec7u",
+            "civ": "Vietnamese"
+        },
+        {
+            "leader": "Shaka",
+            "civ": "Zulu"
+        }
+    ],
+    "maps": [
+        {
+            "type": "Continents"
+        },
+        {
+            "type": "Fractal"
+        },
+        {
+            "type": "Inland Sea",
+            "no_wrap": true
+        },
+        {
+            "type": "Island Plates"
+        },
+        {
+            "type": "Pangaea"
+        },
+        {
+            "type": "Shuffle"
+        },
+        {
+            "type": "4-Leaf Clover",
+            "no_wrap": true,
+            "sizes": [
+                "Tiny"
+            ]
+        },
+        {
+            "type": "6-Armed Snowflake",
+            "no_wrap": true,
+            "sizes": [
+                "Small"
+            ]
+        },
+        {
+            "type": "Earth",
+            "sizes": [
+                "Standard",
+                "Huge"
+            ],
+            "tsl": []
+        },
+        {
+            "type": "Mediterranean Large",
+            "no_wrap": true,
+            "sizes": [
+                "Large"
+            ],
+            "tsl": [
+                "Arabian",
+                "Babylonian",
+                "Byzantine",
+                "Egyptian",
+                "English",
+                "French",
+                "Gallic",
+                "Georgian",
+                "German",
+                "Greek",
+                "Hungarian",
+                "Macedonian",
+                "Ottoman",
+                "Persian",
+                "Phoenician",
+                "Polish",
+                "Portugese",
+                "Roman",
+                "Spanish",
+                "Sumerian"
+            ]
+        },
+        {
+            "type": "Archipelago"
+        },
+        {
+            "type": "Seven Seas"
+        },
+        {
+            "type": "Small Continents"
+        },
+        {
+            "type": "East Asia",
+            "no_wrap": true,
+            "sizes": [
+                "Standard"
+            ],
+            "tsl": [
+                "Chinese",
+                "Indian",
+                "Indonesian",
+                "Japanese",
+                "Khmer",
+                "Korean",
+                "Mongolian",
+                "Scythian",
+                "Vietnamese"
+            ]
+        },
+        {
+            "type": "Europe",
+            "no_wrap": true,
+            "sizes": [
+                "Standard"
+            ],
+            "tsl": [
+                "Byzantine",
+                "English",
+                "French",
+                "Gallic",
+                "Georgian",
+                "German",
+                "Greek",
+                "Hungarian",
+                "Macedonian",
+                "Dutch",
+                "Norwegian",
+                "Ottoman",
+                "Polish",
+                "Portugese",
+                "Roman",
+                "Russian",
+                "Scottish",
+                "Scythian",
+                "Spanish",
+                "Swedish"
+            ]
+        },
+        {
+            "type": "Continents and Islands"
+        },
+        {
+            "type": "Lakes"
+        },
+        {
+            "type": "Mirror",
+            "sizes": [
+                "Tiny"
+            ]
+        },
+        {
+            "type": "Primordial"
+        },
+        {
+            "type": "Splintered Fractal"
+        },
+        {
+            "type": "Terra"
+        },
+        {
+            "type": "Tilted Axis",
+            "no_wrap": true
+        },
+        {
+            "type": "Highlands"
+        },
+        {
+            "type": "Wetlands"
+        }
+    ]
+}
