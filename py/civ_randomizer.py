@@ -21,11 +21,18 @@ def randomize():
     map_sizes = map["sizes"] if "sizes" in map else ("Duel", "Tiny", "Small", "Standard", "Large", "Huge")
     map_size = pick_random(map_sizes)
 
+    # Options for distribution?
+    counts  = (  0,   1,  2,  3,  4, 5, 6, 7, 8)
+    weights = (256, 128, 64, 32, 16, 8, 4, 2, 1)
+    count = random.choices(counts, weights=weights, k=1)[0]
+    modes = random.sample(data["modes"], k=count)
+
     return {
         "civ": civ,
         "leader": leader,
         "map_type": map_type,
-        "map_size": map_size
+        "map_size": map_size,
+        "modes": modes
     }
 
 print(randomize())
