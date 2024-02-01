@@ -477,5 +477,13 @@
         "Monopolies and Corporations",
         "Barbarian Clans",
         "Zombie Defense"
+    ],
+    "victorys": [
+        "Culture",
+        "Diplomacy",
+        "Domination",
+        "Religious",
+        "Science",
+        "Score"
     ]
 }

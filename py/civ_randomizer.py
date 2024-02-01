@@ -27,12 +27,18 @@ def randomize():
     count = random.choices(counts, weights=weights, k=1)[0]
     modes = random.sample(data["modes"], k=count)
 
+    counts = (  1,  2, 3, 4, 5, 6)
+    weights = (32, 16, 8, 4, 2, 1)
+    count = random.choices(counts, weights=weights, k=1)[0]
+    victorys = random.sample(data["victorys"], k=count)
+
     return {
         "civ": civ,
         "leader": leader,
         "map_type": map_type,
         "map_size": map_size,
-        "modes": modes
+        "modes": modes,
+        "victorys": victorys
     }
 
 print(randomize())
