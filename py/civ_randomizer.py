@@ -35,6 +35,7 @@ def randomize():
     return {
         "civ": civ,
         "leader": leader,
+        "leader_img": f"static/img/{leader}.png",
         "map_type": map_type,
         "map_size": map_size,
         "modes": modes,
