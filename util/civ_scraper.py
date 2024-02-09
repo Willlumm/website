@@ -2,11 +2,10 @@ from bs4 import BeautifulSoup
 import requests
 import shutil
 
-url = "https://civilization.fandom.com/wiki/Leaders_(Civ6)"
-
 def scrape_imgs_from_tables(url, dir, height=None):
 
     response = requests.get(url)
+    print(response)
     soup = BeautifulSoup(response.text, "html.parser")
 
     tables = soup.find_all("table", class_="article-table")
@@ -36,4 +35,4 @@ def scrape_imgs_from_tables(url, dir, height=None):
             print(f"Scraping image {j+1} of {len(imgs)} ({img["alt"]})")
 
 # scrape_imgs_from_tables("https://civilization.fandom.com/wiki/Leaders_(Civ6)", "leaders", height=44)
-scrape_imgs_from_tables("https://civilization.fandom.com/wiki/Map_(Civ6))", "maps", height=48)
+scrape_imgs_from_tables("https://civilization.fandom.com/wiki/Map_(Civ6)", "maps", height=48)
