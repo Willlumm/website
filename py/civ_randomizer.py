@@ -34,10 +34,11 @@ def randomize():
 
     return {
         "civ": civ,
-        "civ_img": f"static/img/{civ} ({leader}) (Civ6).png",
+        "civ_img": f"static/img/civs/{civ} ({leader}) (Civ6).png",
         "leader": leader,
-        "leader_img": f"static/img/{leader}.png",
+        "leader_img": f"static/img/leaders/{leader}.png",
         "map_type": map_type,
+        "map_type_img": f"static/img/maps/Map {map_type} (Civ6).png",
         "map_size": map_size,
         "modes": modes,
         "victorys": victorys
