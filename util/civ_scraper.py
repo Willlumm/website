@@ -6,18 +6,28 @@ url = "https://civilization.fandom.com/wiki/Leaders_(Civ6)"
 response = requests.get(url)
 soup = BeautifulSoup(response.text, "html.parser")
 
-imgs = soup.find_all("img", attrs={"alt": True, "data-src": True, "data-relevant": 1})
+tables = soup.find_all("table", class_="article-table")
 
-for i, img in enumerate(imgs):
+for i, table in enumerate(tables):
 
-    end = img["data-src"].index("scale-to-width-down")
-    img_url = img["data-src"][:end]
+    imgs = table.find_all("img", attrs={"alt": True, "data-src": True})
 
-    img_response = requests.get(img_url, stream=True)
-    img_response.raw.decode_content = True
+    print(f"\nSearching table {i+1} of {len(tables)}\n")
 
-    filename = f"static/img/{img["alt"]}.png"
-    with open(filename, "wb") as file:
-        shutil.copyfileobj(img_response.raw, file)
-    
-    print(f"Scraping image {i} of {len(imgs)} ({img["alt"]})")
+    for j, img in enumerate(imgs):
+
+        if img["height"] != "44":
+            print(f"Image {j+1} skipped")
+            continue
+
+        end = img["data-src"].index("scale-to-width-down")
+        img_url = img["data-src"][:end]
+
+        img_response = requests.get(img_url, stream=True)
+        img_response.raw.decode_content = True
+
+        filename = f"static/img/{img["alt"]}.png"
+        with open(filename, "wb") as file:
+            shutil.copyfileobj(img_response.raw, file)
+        
+        print(f"Scraping image {j+1} of {len(imgs)} ({img["alt"]})")
