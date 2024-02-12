@@ -8,6 +8,10 @@
         <img src= "{{ settings.civ_img }}">
         <img src= "{{ settings.leader_img }}">
         <img src= "{{ settings.map_type_img }}">
+        {% for mode in settings.modes_imgs %}
+            <img src= "{{ mode }}">
+        {% endfor %}
+        <img src= "{{ settings.victory_img }}">
         <p>
             {{ settings.civ }}
             <br>
@@ -19,7 +23,7 @@
             <br>
             {{ settings.modes }}
             <br>
-            {{ settings.victorys }}
+            {{ settings.victory }}
         </p>
     </body>
 </html>

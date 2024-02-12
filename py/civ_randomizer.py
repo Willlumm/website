@@ -27,21 +27,20 @@ def randomize():
     count = random.choices(counts, weights=weights, k=1)[0]
     modes = random.sample(data["modes"], k=count)
 
-    counts = (  1,  2, 3, 4, 5, 6)
-    weights = (32, 16, 8, 4, 2, 1)
-    count = random.choices(counts, weights=weights, k=1)[0]
-    victorys = random.sample(data["victorys"], k=count)
+    victory = pick_random(data["victories"])
 
     return {
-        "civ": civ,
-        "civ_img": f"static/img/civs/{civ} ({leader}) (Civ6).png",
-        "leader": leader,
-        "leader_img": f"static/img/leaders/{leader}.png",
-        "map_type": map_type,
+        "civ":          civ,
+        "leader":       leader,
+        "map_type":     map_type,
+        "map_size":     map_size,
+        "modes":        modes,
+        "victory":      victory,
+        "civ_img":      f"static/img/civs/{civ} ({leader}) (Civ6).png",
+        "leader_img":   f"static/img/leaders/{leader}.png",
         "map_type_img": f"static/img/maps/Map {map_type} (Civ6).png",
-        "map_size": map_size,
-        "modes": modes,
-        "victorys": victorys
+        "modes_imgs":   [f"static/img/modes/{mode}.png" for mode in modes],
+        "victory_img":  f"static/img/victories/{victory} Victory (Civ6).png"
     }
 
 print(randomize())
