@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Civ 6 Randomizer</title>
+        <link rel="stylesheet" href="static/css/style.css">
+    </head>
+    <body>
+        <div class="split left">
+            <img class="big" src= "{{ settings.civ_img }}">
+            <img class="big" src= "{{ settings.leader_img }}">
+            <br>
+            <img class="big" src= "{{ settings.map_type_img }}">
+            <img class="big" src= "{{ settings.victory_img }}">
+            <br>
+            {% for mode in settings.modes_imgs %}
+                <img class="small" src= "{{ mode }}">
+            {% endfor %}
+        </div>
+        <div class="split right">
+            <p class="big">
+                {{ settings.civ }}: {{ settings.leader }}
+                <br>
+                {{ settings.map_type }} ({{ settings.map_size }})
+                <br>
+                {{ settings.victory }} Victory
+                <br>
+                {% if settings.modes | length > 0 %}
+                    <ul class="big">
+                    {% for mode in settings.modes %}
+                        <li>{{ mode }}</li>
+                    {% endfor %}
+                    </ul>
+                {% else %}
+                    No gamemodes
+                {% endif %}
+                <br>
+            </p>
+        </div>
+    </body>
+</html>

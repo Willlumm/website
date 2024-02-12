@@ -2,6 +2,13 @@
 
 ## To Do
     
+- Civ
+  - Toggle options "never", "random", "always"
+  - Game mode / victory type frequency
+  - Regenerate button
+  - TSL toggle
+  - More map settings
+
 - General
   - Matoran font toggle
   - Quote of the day
@@ -9,8 +16,7 @@
 - Password Generator
   - Dedupe chars
 
-# Bugs
-- Chars not changing on user input
+## Bugs
 
 ## Project Ideas:
 - Catan game
@@ -24,5 +30,5 @@
 - About section
 - Links
 
-# Resources
+## Resources
 - https://www.geeksforgeeks.org/flask-tutorial/
