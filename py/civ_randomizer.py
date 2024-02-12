@@ -14,8 +14,8 @@ def randomize():
 
     leader, civ = pick_random(data["leaders"]).values()
 
-    map = pick_random(data["maps"])
-
+    maps = [map for map in data["maps"] if "tsl" not in map or civ in map["tsl"] ]
+    map = pick_random(maps)
     map_type = map["type"]
 
     map_sizes = map["sizes"] if "sizes" in map else ("Duel", "Tiny", "Small", "Standard", "Large", "Huge")

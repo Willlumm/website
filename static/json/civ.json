@@ -49,7 +49,7 @@
             "civ": "Canadian"
         },
         {
-            "leader": "Qin Shi Huang",
+            "leader": "Qin Shi Huang (Mandate of Heaven)",
             "civ": "Chinese"
         },
         {
@@ -348,8 +348,7 @@
             "sizes": [
                 "Standard",
                 "Huge"
-            ],
-            "tsl": []
+            ]
         },
         {
             "type": "Mediterranean",
