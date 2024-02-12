@@ -2,6 +2,13 @@
 
 ## To Do
     
+- Civ
+  - Toggle options "never", "random", "always"
+  - Game mode / victory type frequency
+  - Regenerate button
+  - TSL toggle
+  - More map settings
+
 - General
   - Matoran font toggle
   - Quote of the day

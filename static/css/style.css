@@ -7,13 +7,13 @@ body {
 h1 {
     font-family:        monospace;
     font-size:          64px;
-    text-align:         center;
+    /* text-align:         center; */
 }
 
 h2 {
     font-family:        monospace;
     font-size:          32px;
-    text-align:         center;
+    /* text-align:         center; */
 }
 
 p {
@@ -21,9 +21,54 @@ p {
     font-size:          16px;
 }
 
-p[class="subtitle"] {
+p.big {
+    font-family:        Helvetica, Arial, sans-serif;
+    font-size:          32px;
+    line-height:        2.0;
+}
+
+ul {
+    font-family:        Helvetica, Arial, sans-serif;
+    font-size:          16px;
+}
+
+ul.big {
+    font-family:        Helvetica, Arial, sans-serif;
+    font-size:          32px;
+}
+
+.subtitle {
     font-style:         italic;
-    text-align:         center;
+    /* text-align:         center; */
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left:               0;
+    text-align:         right;
+}
+
+.right {
+    right: 0;
+}
+
+img.big {
+    height: auto;
+    width: 20%;
+}
+
+img.small {
+    height: auto;
+    width: 5%;
 }
 
 .tooltip {
