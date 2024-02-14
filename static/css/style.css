@@ -30,11 +30,12 @@ p.big {
 ul {
     font-family:        Helvetica, Arial, sans-serif;
     font-size:          16px;
+    list-style-type:    None;
+    line-height:        200%;
 }
 
-ul.big {
-    font-family:        Helvetica, Arial, sans-serif;
-    font-size:          32px;
+ul.small {
+    line-height:        150%;
 }
 
 .subtitle {
@@ -42,23 +43,48 @@ ul.big {
     /* text-align:         center; */
 }
 
-.split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
+table {
+    font-family:        Helvetica, Arial, sans-serif;
+    font-size:          16px;
 }
 
-.left {
-    left:               0;
-    text-align:         right;
+.center {
+    text-align:         center;
 }
 
-.right {
-    right: 0;
+div.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 5px;
+  }
+
+.grid-container > div {
+    padding: 5px;
+    /* background-color: darkgreen; */
+}
+
+.grid-container > div.left_bar {
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.grid-container > div.main {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.grid-container > div.right_bar {
+    text-align: left;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
 }
 
 img.big {
@@ -66,9 +92,14 @@ img.big {
     width: 20%;
 }
 
+img.medium {
+    height: auto;
+    width: 10%;
+}
+
 img.small {
     height: auto;
-    width: 5%;
+    width: 7.5%;
 }
 
 .tooltip {
@@ -77,8 +108,8 @@ img.small {
     border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
   }
   
-  /* Tooltip text */
-  .tooltip .tooltiptext {
+/* Tooltip text */
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: #555;
@@ -86,17 +117,17 @@ img.small {
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-  
+
     /* Position the tooltip text */
     position: absolute;
     z-index: 1;
     bottom: 125%;
     left: 50%;
     margin-left: -60px;
-  }
-  
-  /* Tooltip arrow */
-  .tooltip .tooltiptext::after {
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -105,4 +136,4 @@ img.small {
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
-  }
+}
