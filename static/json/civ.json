@@ -466,23 +466,5 @@
         {
             "type": "Wetlands"
         }
-    ],
-    "modes": [
-        "Apocalypse",
-        "Secret Societies",
-        "Tech and Civic Shuffle",
-        "Dramatic Ages",
-        "Heroes & Legends",
-        "Monopolies and Corporations",
-        "Barbarian Clans",
-        "Zombie Defense"
-    ],
-    "victories": [
-        "Culture",
-        "Diplomatic",
-        "Domination",
-        "Religious",
-        "Science",
-        "Score"
     ]
 }
