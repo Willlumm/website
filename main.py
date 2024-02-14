@@ -12,8 +12,12 @@ def main():
 
 @app.route("/civ", methods=["GET", "POST"])
 def civ():
-    settings = civ_randomizer.randomize()
-    return render_template("civ.html", settings=settings)
+    if request.form:
+        settings = request.form
+    else:
+        settings = None
+    result = civ_randomizer.randomize(settings)
+    return render_template("civ.html", settings=settings, result=result)
 
 @app.route("/password", methods=["GET", "POST"])
 def password():

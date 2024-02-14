@@ -8,7 +8,9 @@ def load_data():
 def pick_random(items):
     return random.choice(items)
     
-def randomize():
+def randomize(settings):
+    if settings and settings["Culture"] == "never":
+        return None
 
     data = load_data()
 
@@ -42,8 +44,6 @@ def randomize():
         "modes_imgs":   [f"static/img/modes/{mode}.png" for mode in modes],
         "victory_img":  f"static/img/victories/{victory} Victory (Civ6).png"
     }
-
-print(randomize())
 
 """
         // https://civilization.fandom.com/wiki/Starting_a_new_game_(Civ6)

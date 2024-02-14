@@ -6,35 +6,65 @@
     </head>
     <body>
         <div class="split left">
-            <img class="big" src= "{{ settings.civ_img }}">
-            <img class="big" src= "{{ settings.leader_img }}">
+            <img class="big" src= "{{ result.civ_img }}">
+            <img class="big" src= "{{ result.leader_img }}">
+            <img class="big" src= "{{ result.map_type_img }}">
             <br>
-            <img class="big" src= "{{ settings.map_type_img }}">
-            <img class="big" src= "{{ settings.victory_img }}">
+            <img class="medium" src= "{{ result.victory_img }}">
             <br>
-            {% for mode in settings.modes_imgs %}
+            {% for mode in result.modes_imgs %}
                 <img class="small" src= "{{ mode }}">
             {% endfor %}
         </div>
         <div class="split right">
             <p class="big">
-                {{ settings.civ }}: {{ settings.leader }}
+                {{ result.civ }}: {{ result.leader }}
                 <br>
-                {{ settings.map_type }} ({{ settings.map_size }})
+                {{ result.map_type }} ({{ result.map_size }})
                 <br>
-                {{ settings.victory }} Victory
+                {{ result.victory }} Victory
                 <br>
-                {% if settings.modes | length > 0 %}
+                {% if result.modes | length > 0 %}
                     <ul class="big">
-                    {% for mode in settings.modes %}
+                    {% for mode in result.modes %}
                         <li>{{ mode }}</li>
                     {% endfor %}
                     </ul>
                 {% else %}
                     No gamemodes
                 {% endif %}
-                <br>
             </p>
+            <br>
+            <form>
+                <input type="submit" value="Generate">
+                <br>
+                Victory Types
+                <br>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Never</th>
+                        <th>Random</th>
+                        <th>Always</th>
+                    </tr>
+                    {% for victory_type in ["Culture", "Diplomatic", "Domination", "Religious", "Science", "Score"] %}
+                    <tr>
+                        <td>
+                            <label for="{{ victory_type }}">{{ victory_type }}</label>
+                        </td>
+                        <td class="center">
+                            <input type="radio" id="never" name="{{ victory_type }}" value="never">
+                        </td>
+                        <td class="center">
+                            <input type="radio" id="random" name="{{ victory_type }}" value="random">
+                        </td>
+                        <td class="center">
+                            <input type="radio" id="always" name="{{ victory_type }}" value="always">
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </form>
         </div>
     </body>
 </html>

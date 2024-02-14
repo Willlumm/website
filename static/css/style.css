@@ -42,6 +42,10 @@ ul.big {
     /* text-align:         center; */
 }
 
+td.center {
+    text-align:         center;
+}
+
 .split {
     height: 100%;
     width: 50%;
@@ -66,9 +70,14 @@ img.big {
     width: 20%;
 }
 
+img.medium {
+    height: auto;
+    width: 10%;
+}
+
 img.small {
     height: auto;
-    width: 5%;
+    width: 7.5%;
 }
 
 .tooltip {
