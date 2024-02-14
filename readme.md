@@ -3,10 +3,10 @@
 ## To Do
     
 - Civ
-  - Toggle options "never", "random", "always"
-  - Game mode / victory type frequency
-  - Regenerate button
+  - Map size options
   - TSL toggle
+  - Wrap toggle
+  - Civ colors
   - More map settings
 
 - General
