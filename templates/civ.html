@@ -1,40 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Civ 6 Randomizer</title>
-        <link rel="stylesheet" href="static/css/style.css">
-    </head>
-    <body>
-        <div class="split left">
-            <img class="big" src= "{{ settings.civ_img }}">
-            <img class="big" src= "{{ settings.leader_img }}">
-            <br>
-            <img class="big" src= "{{ settings.map_type_img }}">
-            <img class="big" src= "{{ settings.victory_img }}">
-            <br>
-            {% for mode in settings.modes_imgs %}
-                <img class="small" src= "{{ mode }}">
-            {% endfor %}
-        </div>
-        <div class="split right">
-            <p class="big">
-                {{ settings.civ }}: {{ settings.leader }}
-                <br>
-                {{ settings.map_type }} ({{ settings.map_size }})
-                <br>
-                {{ settings.victory }} Victory
-                <br>
-                {% if settings.modes | length > 0 %}
-                    <ul class="big">
-                    {% for mode in settings.modes %}
-                        <li>{{ mode }}</li>
+
+<head>
+    <title>Civ 6 Randomizer</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <form method="POST">
+        <div class="grid-container">
+            <div class="left_bar">
+                <table>
+                    <tr>
+                        <th class="center" colspan="4">
+                            Victory Conditions
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="center" colspan="4">
+                            <input type="number" id="victory_condition_count" name="victory_condition_count" min="0" max="6"
+                            value="{{ options.victory_condition_count }}">
+                        </td>
+                    </tr>
+                    <tr class="center">
+                        <td></td>
+                        <td>Never</td>
+                        <td>Random</td>
+                        <td>Always</td>
+                    </tr>
+                    {% for victory_condition in ["Culture", "Diplomatic", "Domination", "Religious", "Science", "Score"] %}
+                    <tr>
+                        <td>
+                            <label for="{{ victory_condition }}">{{ victory_condition }}</label>
+                        </td>
+                        <td class="center">
+                            <input type="radio" id="never" name="{{ victory_condition }}" value="never" {% if
+                                options[victory_condition]=="never" %} checked {% endif %}>
+                        </td>
+                        <td class="center">
+                            <input type="radio" id="random" name="{{ victory_condition }}" value="random" {% if
+                                options[victory_condition]=="random" %} checked {% endif %}>
+                        </td>
+                        <td class="center">
+                            <input type="radio" id="always" name="{{ victory_condition }}" value="always" {% if
+                                options[victory_condition]=="always" %} checked {% endif %}>
+                        </td>
+                    </tr>
                     {% endfor %}
-                    </ul>
-                {% else %}
-                    No gamemodes
-                {% endif %}
-                <br>
-            </p>
+                    <tr class="center">
+                        <th class="center" colspan="4">
+                            Game Modes
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="center" colspan="4">
+                            <label for="game_mode_min">min:</label>
+                            <input type="number" id="game_mode_min" name="game_mode_min" min="0" max="8"
+                                value="{{ options.game_mode_min }}">
+                            &nbsp;
+                            <label for="game_mode_max">max:</label>
+                            <input type="number" id="game_mode_max" name="game_mode_max" min="0" max="8"
+                                value="{{ options.game_mode_max }}">
+                        </td>
+                    </tr>
+                    {% for game_mode in ["Apocalypse", "Barbarian Clans", "Dramatic Ages", "Heroes & Legends",
+                    "Monopolies and Corporations", "Secret Societies", "Tech and Civic Shuffle", "Zombie Defense"] %}
+                    <tr>
+                        <td>
+                            <label for="{{ game_mode }}">{{ game_mode }}</label>
+                        </td>
+                        <td class="center">
+                            <input type="radio" id="never" name="{{ game_mode }}" value="never" {% if
+                                options[game_mode]=="never" %} checked {% endif %}>
+                        </td>
+                        <td class="center">
+                            <input type="radio" id="random" name="{{ game_mode }}" value="random" {% if
+                                options[game_mode]=="random" %} checked {% endif %}>
+                        </td>
+                        <td class="center">
+                            <input type="radio" id="always" name="{{ game_mode }}" value="always" {% if
+                                options[game_mode]=="always" %} checked {% endif %}>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <div class="main">
+                <img class="big" src="{{ result.civ_img }}">
+                <img class="big" src="{{ result.leader_img }}">
+                <img class="big" src="{{ result.map_type_img }}">
+            </div>
+            <div class="main">
+                {% for img in result.victory_condition_imgs %}
+                <img class="medium" src="{{ img }}">
+                {% endfor %}
+            </div>
+            <div class="main">
+                {% for img in result.game_mode_imgs %}
+                <img class="small" src="{{ img }}">
+                {% endfor %}
+            </div>
+            <div class="main">
+                <input type="submit" value="Generate" style="height:50%; width:25%; font-size: 32px;">
+            </div>
+            <div class="right_bar" >
+                <ul>
+                    <li>{{ result.civ }}: {{ result.leader }}</li>
+                    <li>{{ result.map_type }} ({{ result.map_size }})</li>
+                    <li>
+                        {% if result.victory_conditions | length > 0 %}
+                        Victory Conditions:
+                        <ul class="small">
+                            {% for victory_condition in result.victory_conditions %}
+                            <li>{{ victory_condition }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% else %}
+                        No Victory Conditions
+                        {% endif %}
+                    </li>
+                    <li>
+                        {% if result.game_modes | length > 0 %}
+                        Game Modes:
+                        <ul class="small">
+                            {% for game_mode in result.game_modes %}
+                            <li>{{ game_mode }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% else %}
+                        No Game Modes
+                        {% endif %}
+                    </li>
+                </ul>
+            </div>
         </div>
-    </body>
+    </form>
+</body>
+
 </html>
